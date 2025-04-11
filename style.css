@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+h1, h3 {
+    font-size: 2.5em;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.5em;
+}
+p {
+    font-size: 1.25em;
+    font-size: 18px;
+    color: hsl(201, 11%, 66%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo {
+    margin-top: 6.25em;
+}
+.clipboard-txt {
+    width: 590px;
+    text-align: center;
+    line-height: 1.5;
+}
+.btn-div {
+    margin-top: 2.5em;
+}
+
+/* For the first Button  */
+.btn-div .ios{
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+    font-size: 1.25em;
+    font-weight: lighter;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 5px hsl(171, 72%, 38%);
+}
+.btn-div .ios:hover {
+    background-color: hsl(171, 66%, 38%);
+    box-shadow: 0 5px 5px hsl(171, 72%, 28%);
+}
+
+/* For the second Button  */
+.btn-div .mac{
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+    font-size: 1.25em;
+    font-weight: lighter;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 5px hsl(233, 60%, 46%);
+}
+.btn-div .mac:hover {
+    background-color: hsl(233, 100%, 59%);
+    box-shadow: 0 5px 5px hsl(233, 60%, 36%);
+}
+
+/* For keepTrack */
+.Keeptrack {
+    margin-top: 5em;
+    font-size: 1.25em;
+    text-align: center;
+    width: 50%;
+}
+.Keeptrack h2 {
+    font-size: 2em;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.5em;
+}
+.Keeptrack p {
+    font-size: 1.25em;
+    font-size: 18px;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+
+/* For Image Computer */
+.image-computer {
+    width: 100%;
+}
+.img-computer-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    flex: 1fr;
+}
+.img-computer-flex .content-img {
+    display: flex;
+    width: 50%;
+}
+.img-computer-flex .content-flex {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    width: 50%;
+}
+.quick-search {
+    width: 65%;
+    margin-bottom: 3em;
+}
+.icloud-sync {
+    width: 65%;
+    margin-bottom: 3em;
+}
+.complete-history {
+    width: 65%;
+    margin-bottom: 3em;
+}
+
+.quick-search h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+}
+.icloud-sync h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+}
+.complete-history h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.4em;
+}
+
+.quick-search p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.icloud-sync p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.complete-history p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* access-clipboard */
+.access-clipboard {
+    margin-top: 5em;
+    font-size: 1.25em;
+    text-align: center;
+    width: 50%;
+}
+.access-clipboard h2 {
+    font-size: 2em;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.5em;
+}
+.access-clipboard p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.img-device-div {
+    margin-top: 6em;
+}
+
+/* For supercharge */
+.supercharge {
+    margin-top: 4em;
+    font-size: 1.25em;
+    text-align: center;
+    width: 50%;
+}
+.supercharge h2 {
+    font-size: 2em;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.5em;
+}
+.supercharge p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* For tools */
+.tools {
+    display: flex;
+    margin-top: 3em;
+}
+.tools .blacklists {
+    flex: 1;
+    margin: 1em;
+    text-align: center;
+}
+.tools .blacklists h2{
+    font-size: 1.5em;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.5em;
+}
+.tools .blacklists p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    width: 350px;
+}
+
+.tools .icon-text {
+    flex: 1;
+    margin: 1em;
+    text-align: center;
+    padding-top: 0.625em;
+}
+.tools .icon-text h2{
+    font-size: 1.5em;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.5em;
+}
+.tools .icon-text p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    width: 350px;
+}
+
+.tools .sneak-preview {
+    flex: 1;
+    margin: 1em;
+    text-align: center;
+    padding-top: 0.625em;
+}
+.tools .sneak-preview h2{
+    font-size: 1.5em;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.5em;
+}
+.tools .sneak-preview p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    width: 350px;
+}
+
+/* For logos */
+.logos {
+    display: flex;
+    flex: 1fr;
+    gap: 5.5em;
+    margin-top: 9em;
+}
+
+/* For ios-mac */
+.ios-mac {
+    margin-top: 6em;
+    font-size: 1.25em;
+    text-align: center;
+    width: 50%;
+}
+.ios-mac h2 {
+    font-size: 2em;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 0.5em;
+}
+.ios-mac p {
+    font-size: 1.25em;
+    font-size: 18px;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.5;
+}
+.ios-mac .ios{
+    background-color: hsl(171, 66%, 44%);
+    color: white;
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+    font-size: 1.25em;
+    font-weight: lighter;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 5px hsl(171, 72%, 38%);
+}
+.ios-mac .ios:hover {
+    background-color: hsl(171, 66%, 38%);
+    box-shadow: 0 5px 5px hsl(171, 72%, 28%);
+}
+.ios-mac .mac {
+    background-color: hsl(233, 100%, 69%);
+    color: white;
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+    font-size: 1.25em;
+    font-weight: lighter;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 5px hsl(233, 60%, 46%);
+}
+
+.ios-mac .mac:hover {
+    background-color: hsl(233, 100%, 59%);
+    box-shadow: 0 5px 5px hsl(233, 60%, 36%);
+}
+
+.ios-mac div {
+    margin-top: 3em;
+    display: flex;
+    gap: 1em;
+}
+
+/* For footer */
+.footer {
+    background-color: hsl(180, 7%, 97%);
+    display: flex;
+    margin-top: 9em;
+    width: 100%;
+    padding: 2em 12em;
+}
+.footer p:hover {
+    color: hsl(171, 66%, 44%);
+    cursor: pointer;
+}
+.footer img {
+    width: 50%;
+}
+.footer .footer-div .one {
+    display: flex;
+    align-items: center;
+    gap: 10.6em;
+    font-size: 0.5em;
+    margin-bottom: 2em;
+}
+.footer .footer-div .two {
+    display: flex;
+    align-items: center;
+    gap: 5em;
+    font-size: 0.5em;
+}
+.footer .footer-div-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    margin-left: 12em;
+}
+.icons:hover {
+    cursor: pointer;
+    fill: hsl(171, 66%, 44%);
+}
+.footer .info {
+    margin-left: 3em;
+}
+
+@media (max-width: 1440px) {
+    body {
+        width: 100vw;
+    }
+}
+@media (max-width: 375px) {
+    body {
+        background-image: url(images/bg-header-mobile.png);
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+    }
+    h1 {
+        margin-top: 2em;
+        width: 330px;
+        text-align: center;
+        font-size: 2em;
+    }
+    .clipboard-txt {
+        width: 340px;
+    }
+    .btn-div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    .Keeptrack {
+        width: 80%;
+    }
+    .Keeptrack h2 {
+        font-size: 1.8em;
+    }
+    .Keeptrack p {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .img-computer-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5em;
+        flex: 1fr;
+    }
+    .img-computer-flex .content-img {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .img-computer-flex img {
+        width: 100%;
+    }
+    .content-flex {
+        margin-top: 4em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .quick-search {
+        width: 180%;
+        margin-right: 6.5em;
+        text-align: center;
+    }
+    .icloud-sync {
+        width: 180%;
+        margin-right: 6.5em;
+        text-align: center;
+    }
+    .complete-history {
+        width: 180%;
+        margin-right: 6.5em;
+        text-align: center;
+    }
+    .access-clipboard {
+        width: 100%;
+        margin-top: 8em;
+    }
+    .access-clipboard h2 {
+        font-size: 1.8em;
+    }
+    .access-clipboard p {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .img-device-div {
+        margin-top: 4em;
+        width: 80%;
+    }
+    .img-device-div img {
+        width: 100%;
+    }
+    .supercharge {
+        width: 80%;
+        margin-top: 4em;
+    }
+    .supercharge h3 {
+        font-size: 1.8em;
+    }
+    .supercharge p {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .tools {
+        margin-top: 5em;
+        flex-direction: column;
+    }
+    .tools .blacklists, .icon-text, .sneak-preview {
+        flex: 1;
+        margin: 1em auto;
+        text-align: center;
+    }
+    .tools .blacklists p {
+        width: 300px;
+    }
+    .tools .icon-text p {
+        width: 250px;
+        margin: 0 auto;
+    }
+    .tools .sneak-preview p {
+        width: 300px;
+    }
+    .tools .blacklists img, .icon-text img, .sneak-preview img {
+        margin-bottom: 1.5em;
+    }
+    .logos {
+        flex-direction: column;
+    }
+    .ios-mac {
+        width: 80%;
+        margin-top: 8em;
+    }
+    .ios-mac h2 {
+        font-size: 1.6em;
+    }
+    .ios-mac p {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .ios-mac div {
+        flex-direction: column;
+    }
+    .ios-mac div .ios, .ios-mac div .mac {
+        font-size: 0.9em;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .footer img {
+        width: 100%;
+    }
+    .footer .footer-div .one {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .footer .footer-div .two {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .footer .footer-div-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        margin-left: 0;
+        margin-top: 2em;
+    }
+    .footer .info {
+        margin-left: 0;
+    }
+    .footer .info p {
+        font-size: 2em;
+        width: 200%;
+    }
+}
